@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ractangle{
+    background-color: #2a3d81;
+    height: 500px;
+    width: 800px;
+    position: relative;
+}
+.centralCircle{
+    height: 310px;
+    width: 310px;
+    background-color: #6c93cc;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.upCircle, .downCircle, .leftCircle, .rightCircle{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 20px #2a3d81 solid;
+    /* background-color: red; */
+    box-sizing: border-box;
+    z-index: 100;
+    position: absolute;
+}
+.leftCircle{
+    left: 160px;
+    top: 125px;
+}
+.rightCircle{
+    left: 390px;
+    top: 125px;
+}
+.upCircle{
+    left: 275px;
+    top: 10px;
+}
+.downCircle{
+    left: 275px;
+    bottom: 10px;
+}
